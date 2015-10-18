@@ -12,7 +12,7 @@ ENV JAVA_HOME /usr/java/jdk1.7.0_79
 RUN wget http://archive.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz \
   && tar xzf apache-maven-3.1.1-bin.tar.gz \
   && mv apache-maven-3.1.1 /usr/share/maven \
-  && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
+  && ln -s /usr/share/maven/bin/mvn /usr/bin/mvn \
   && rm -f ~/apache-maven-3.1.1-bin.tar.gz
 
 ENV MAVEN_HOME /usr/share/maven
